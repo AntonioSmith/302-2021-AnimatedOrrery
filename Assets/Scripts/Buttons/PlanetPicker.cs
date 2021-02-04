@@ -50,6 +50,6 @@ public class PlanetPicker : MonoBehaviour
     }
     public void FollowNone()
     {
-        target = null;
+        target = Solos.transform;
     }
 }
