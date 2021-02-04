@@ -253,7 +253,7 @@ Transform:
   m_LocalScale: {x: 2.2988, y: 2.2988, z: 2.2988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &139520381
 GameObject:
@@ -444,7 +444,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237758061
 GameObject:
@@ -528,7 +528,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 237758064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805091194}
+        m_TargetAssemblyTypeName: PlanetPicker, Assembly-CSharp
+        m_MethodName: FollowGlados
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &237758064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,7 +947,7 @@ Transform:
   m_LocalScale: {x: 2.2988, y: 2.2988, z: 2.2988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &376465505
 GameObject:
@@ -1048,7 +1060,7 @@ Transform:
   m_LocalScale: {x: 6.0642, y: 6.0642, z: 6.0642}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445976148
 GameObject:
@@ -1132,7 +1144,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 445976151}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805091194}
+        m_TargetAssemblyTypeName: PlanetPicker, Assembly-CSharp
+        m_MethodName: FollowPhyros
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &445976151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1372,8 +1396,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358a95eccab7b1f4baa46b5b1401a411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 963194227}
   target: {fileID: 0}
+  Solos: {fileID: 376465505}
+  Terros: {fileID: 1548710149}
+  Lymphos: {fileID: 24806213}
+  Tempos: {fileID: 1419991379}
+  Glados: {fileID: 366713017}
+  Luminos: {fileID: 816856582}
+  Phyros: {fileID: 1924422746}
 --- !u!4 &805091195
 Transform:
   m_ObjectHideFlags: 0
@@ -1386,7 +1417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &807391779
 GameObject:
@@ -1603,7 +1634,7 @@ Transform:
   m_LocalScale: {x: 2.2988, y: 2.2988, z: 2.2988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821597033
 GameObject:
@@ -1761,7 +1792,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1834,19 +1864,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 27.824, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 026fb9275eaf1cc4b9b1fbc7e28c74cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!1 &1113383668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,7 +2025,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1158895702}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805091194}
+        m_TargetAssemblyTypeName: PlanetPicker, Assembly-CSharp
+        m_MethodName: FollowTempos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1158895702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,7 +2186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324084577
 GameObject:
@@ -2399,7 +2428,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1386998694}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805091194}
+        m_TargetAssemblyTypeName: PlanetPicker, Assembly-CSharp
+        m_MethodName: FollowLuminos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1386998694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2568,7 +2609,7 @@ Transform:
   m_LocalScale: {x: 2.2988, y: 2.2988, z: 2.2988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1548710149
 GameObject:
@@ -2700,7 +2741,7 @@ Transform:
   m_LocalScale: {x: 2.2988, y: 2.2988, z: 2.2988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1552837988
 GameObject:
@@ -2863,7 +2904,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1605092506}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805091194}
+        m_TargetAssemblyTypeName: PlanetPicker, Assembly-CSharp
+        m_MethodName: FollowLymphos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1605092506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3088,7 +3141,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1922723635
 GameObject:
@@ -3353,7 +3406,7 @@ Transform:
   m_LocalScale: {x: 2.2988, y: 2.2988, z: 2.2988}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1965722485
 GameObject:
@@ -3449,7 +3502,7 @@ RectTransform:
   - {fileID: 807391780}
   - {fileID: 1635429300}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3538,7 +3591,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2022759907}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805091194}
+        m_TargetAssemblyTypeName: PlanetPicker, Assembly-CSharp
+        m_MethodName: FollowNone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2022759907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3659,7 +3724,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2068791787}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 805091194}
+        m_TargetAssemblyTypeName: PlanetPicker, Assembly-CSharp
+        m_MethodName: FollowTerros
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2068791787
 MonoBehaviour:
   m_ObjectHideFlags: 0
