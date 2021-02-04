@@ -12,7 +12,7 @@ public class Planet : MonoBehaviour
     [Range(-100, 100)] public float Xradius; 
     //[Range(-100, 100)] public float Yradius; // Separated radius into each axes so it's editable in Inspector
     [Range(-100, 100)] public float Zradius;
-    public float age;    
+    public float age;
 
     void Update()
     {
